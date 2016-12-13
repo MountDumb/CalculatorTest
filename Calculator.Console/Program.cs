@@ -24,8 +24,7 @@ namespace Calculator.ConsoleApp
         decimal Calculator(string choice, decimal num1, decimal num2)
         {
             //Functions func = new Functions();
-            
-            
+              
 
             switch (choice)
             {
@@ -41,6 +40,7 @@ namespace Calculator.ConsoleApp
                     break;
             }
             return fd(num1, num2);
+            
         }
 
         void Menu()
