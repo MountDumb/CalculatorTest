@@ -6,20 +6,22 @@ using System.Threading.Tasks;
 
 namespace Calculator.Logic
 {
-    public class Functions
+    public static class Functions
     {
-        public Functions()
+      
+
+        public static decimal NullFunction(decimal num1, decimal num2)
         {
-            
+            return new decimal();
         }
 
-        public decimal Add(decimal num1, decimal num2)
+        public static decimal Add(decimal num1, decimal num2)
         {
             //Console.WriteLine(num1 + num2);
             return num1 + num2;
         }
 
-        public decimal Subtract(decimal num1, decimal num2)
+        public static decimal Subtract(decimal num1, decimal num2)
         {
             //Console.WriteLine(num1 - num2);
             return num1 - num2;

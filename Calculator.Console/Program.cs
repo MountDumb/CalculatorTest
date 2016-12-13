@@ -23,19 +23,21 @@ namespace Calculator.ConsoleApp
 
         decimal Calculator(string choice, decimal num1, decimal num2)
         {
-            Functions func = new Functions();
+            //Functions func = new Functions();
+            
+            
 
             switch (choice)
             {
                 case "a":
-                    fd = new FuncDelegator(func.Add);
+                    fd = new FuncDelegator(Functions.Add);
                     break;
 
                 case "s":
-                    fd = new FuncDelegator(func.Subtract);
+                    fd = new FuncDelegator(Functions.Subtract);
                     break;
                 default:
-                    Menu();
+                    fd = new FuncDelegator(Functions.NullFunction);
                     break;
             }
             return fd(num1, num2);
